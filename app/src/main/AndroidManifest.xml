@@ -2,7 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ssandoy.s236305_mappe3">
 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.example.ssandoy.s236305_mappe3.permission" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission android:name="com.example.ssandoy.s236305_mappe3.permission" />
+
     <application
+        android:name=".PracticApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,6 +23,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".PlanOverviewActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".PlanActivity" />
+        <activity android:name=".PlanActivityCalendar" />
+
+        <service android:name=".AlarmService" />
+
+        <receiver android:name=".AlarmReceiver" />
+        <receiver android:name=".AlarmResetter">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".PlanContentProvider"
+            android:authorities="com.example.ssandoy.s236305_mappe3"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="com.example.ssandoy.s236305_mappe3.permission"
+            android:writePermission="com.example.ssandoy.s236305_mappe3.permission" />
+
+        <activity android:name=".EditPlanActivity"></activity>
     </application>
 
 </manifest>

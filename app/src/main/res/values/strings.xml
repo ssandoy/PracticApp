@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">S236305_mappe3</string>
-</resources>
+    <string name="planAdded">Plan lagt til i kalenderen!</string>
+    <string name="planChanged">Plan endret og lagt inn i kalenderen!</string>
+    <string name="planDeleted">Plan slettet og fjernet fra kalenderen!</string>
+    <string name="typeTitle">Vennligst skriv inn tittel.</string>
+    <string name="warning">ADVARSEL</string>
+    <string name="deleteQ">Vil du slette denne planen?</string>
+    <string name="alert">Varsel</string>
+    <string name="displayMode">Velg visningsmodus</string>
+
+</resources><!--TODO: LEGGE VERDIER HER !-->
