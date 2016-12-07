@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">S236305_mappe3</string>
+    <string name="app_name">PracticApp</string>
     <string name="planAdded">Plan lagt til i kalenderen!</string>
     <string name="planChanged">Plan endret og lagt inn i kalenderen!</string>
     <string name="planDeleted">Plan slettet og fjernet fra kalenderen!</string>
@@ -8,5 +8,9 @@
     <string name="deleteQ">Vil du slette denne planen?</string>
     <string name="alert">Varsel</string>
     <string name="displayMode">Velg visningsmodus</string>
+    <string name="eventStart">Når hendelsen starter</string>
+    <string name="event5min">5 minutter før</string>
+    <string name="event30min">30 minutter før</string>
+    <string name="event1hour">1 time før</string>
 
-</resources><!--TODO: LEGGE VERDIER HER !-->
+</resources>

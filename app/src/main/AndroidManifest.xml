@@ -12,22 +12,28 @@
     <application
         android:name=".PracticApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/planicon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".PlanOverviewActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
-            android:name=".PlanOverviewActivity"
+            android:name=".PlanActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".PlanActivity" />
-        <activity android:name=".PlanActivityCalendar" />
+
+        <activity
+            android:name=".EditPlanActivity"
+            android:screenOrientation="portrait" />
+
 
         <service android:name=".AlarmService" />
 
@@ -46,7 +52,6 @@
             android:readPermission="com.example.ssandoy.s236305_mappe3.permission"
             android:writePermission="com.example.ssandoy.s236305_mappe3.permission" />
 
-        <activity android:name=".EditPlanActivity"></activity>
     </application>
 
 </manifest>
