@@ -1,1 +1,1 @@
-# PractitApp
+# PracticApp
